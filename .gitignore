@@ -1,0 +1,14 @@
+node_modules/
+
+# Local Hunk state and extension test fixtures
+.hunk/
+.pi/
+
+# Local environment and OS files
+.env
+.env.*
+.DS_Store
+
+# Tool caches and coverage output
+.cache/
+coverage/

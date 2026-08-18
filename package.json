@@ -1,0 +1,49 @@
+{
+  "name": "hunk-diff-context",
+  "version": "0.1.0",
+  "description": "Open the selected Hunk file in an anchored diff context sidebar.",
+  "keywords": [
+    "hunk",
+    "hunk-extension",
+    "diff",
+    "sidebar",
+    "source"
+  ],
+  "homepage": "https://github.com/astwys/hunk-diff-context#readme",
+  "bugs": {
+    "url": "https://github.com/astwys/hunk-diff-context/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astwys/hunk-diff-context.git"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": "Michael Bartl <astwys@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.33.1",
+  "hunk": {
+    "apiVersion": 6,
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "dev": "hunk diff --extension .",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@opentui/core": "^0.5.1",
+    "@opentui/react": "^0.5.1",
+    "@types/bun": "1.3.14",
+    "@types/react": "^19.0.0",
+    "hunkdiff": "^0.19.0",
+    "react": "^19.2.4",
+    "typescript": "^5.9.3"
+  }
+}
